@@ -1,0 +1,69 @@
+body {
+  font-family: "Poppins", sans-serif;
+}
+header {
+  width: 100%;
+}
+
+.hover:hover {
+  color: tomato !important;
+}
+#login-form,
+#task-input {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 5%;
+  width: 400px;
+  background-color: tomato;
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+}
+
+button {
+  margin-top: 20px;
+  font-size: 20px;
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+  background-color: cornflowerblue;
+}
+input {
+  border: 0;
+  border-radius: 5px;
+  padding: 5px;
+}
+#signup {
+  display: none;
+}
+#task-input {
+  display: none;
+}
+textarea {
+  border: 0;
+  padding: 5px;
+  border-radius: 4px;
+}
+#task-show {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  column-gap: 10px;
+  row-gap: 10px;
+}
+.task {
+  display: flex;
+  flex-direction: column;
+  background-color: darkcyan;
+  color: white;
+  padding: 15px;
+  border-radius: 5px;
+  width: 300px;
+  height: auto;
+}
+#invalid-input {
+  display: none;
+}

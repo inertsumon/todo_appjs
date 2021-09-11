@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to ToDo App</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+
+    <script src="https://kit.fontawesome.com/63cb2a1b83.js" crossorigin="anonymous"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <header>
+        <nav class="navbar navbar-light bg-danger">
+            <div class="container-fluid">
+
+                <a class="navbar-brand text-white fw-bold fs-4 " href="#"><i class="fas fa-home mx-3 hover"></i>
+                    <span class="hover">ToDo App</span> </a>
+                <!-- add todo -->
+                <div class="ms-auto mx-4 "> <a href="index.html"><i class="fas fa-plus  text-white fs-4 hover"></i></a>
+                </div>
+
+                <!-- login  -->
+                <div class="me-5"> <a href="index.html"><i class="fas fa-sign-in-alt text-white fs-4 hover"></i></a>
+                </div>
+
+
+
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end bg-white-50" tabindex="-1" id="offcanvasNavbar"
+                    aria-labelledby="offcanvasNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title text-dark fw-bold fs-4" id="offcanvasNavbarLabel">ToDo APP Menu
+                        </h5>
+
+                        <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li class="nav-item my-3">
+
+                                <a class="nav-link active hover fw-bold fs-4 " aria-current="page" href="index.html"> <i
+                                        class="fas fa-calendar-week text-black fs-3 hover"></i> Today</a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link active hover fw-bold fs-4" aria-current="page" href="calender.html">
+                                    <i class="far fa-clock text-black fs-3 hover"></i> Calender</a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a class="nav-link active hover fw-bold fs-4" aria-current="page" href="index.html">
+                                    <i class="fas fa-sign-in-alt text-black fs-3 hover"></i> Login</a>
+                            </li>
+
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="my-4 mx-auto w-50 bg-success text-center p-3 rounded-pill">
+            <h4 class="text-black" id="today">Today: </h4>
+        </div>
+        <div id="login-form">
+            <h2 class="fw-bold">Login Here</h2>
+            <div class="my-3">
+                <span><i class="far fa-envelope fs-2 text-white me-2"></i> </span>
+                <input class="px-3" type="email" id="inputEmail3" placeholder="Type Your Email">
+            </div>
+
+            <div class="my-3">
+                <span><i class="fas fa-key fs-2 text-white me-2"></i> </span>
+                <input class="px-3" type="password" id="inputPassword3" placeholder="Type Your Password">
+            </div>
+            <p class="bg-secondary text-warning">Default:(asad@gmail.com) pass:(asad)</p>
+
+            <button class="mx-4" id="sign-in" type="submit">Sign In</button>
+            <button id="sign-up" class="mx-4" id="sign-up" type="submit">Sign Up</button>
+        </div>
+        <div id="signup" class="mx-auto w-50 my-3">
+            <h3 class="bg-danger rounded text-warning p-2 text-wrap text-center ">Default: asad@gmail.com password: asad
+            </h3>
+        </div>
+
+    </main>
+
+
+
+    <script src=" script.js">
+    </script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
